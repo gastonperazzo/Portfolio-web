@@ -14,7 +14,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a
-          href="/#top"
+          href="#top"
           onClick={(e) => {
             e.preventDefault();
             onNavigateHome();
@@ -33,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
           <ul className="flex items-center gap-4 sm:gap-6 text-sm">
             <li>
               <a
-                href="/#work"
+                href="#work"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigateSection('work');
@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
             </li>
             <li>
               <a
-                href="/#about"
+                href="#about"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigateSection('about');
@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({
             </li>
             <li>
               <a
-                href="/#contact"
+                href="#contact"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigateSection('contact');

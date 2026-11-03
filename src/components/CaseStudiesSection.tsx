@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { CaseStudyData } from '../types/portfolio';
 import { EditableProjectTags } from './EditableProjectTags';
+import { getAssetUrl } from '../utils/assetUrl';
 
 interface CaseStudiesSectionProps {
   caseStudies: CaseStudyData[];
@@ -40,7 +41,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({
               }`}
             >
               <img
-                src={project.image}
+                src={getAssetUrl(project.image)}
                 alt={`Cover image for ${project.title}`}
                 className={`w-full h-full transition-transform duration-500 group-hover:scale-[1.03] ${
                   project.slug === 'connect-teletherapy'

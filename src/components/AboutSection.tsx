@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
 import { personalProfile } from '../data/portfolioData';
+import { getAssetUrl } from '../utils/assetUrl';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const AboutSection: React.FC = () => {
           <div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border bg-muted">
               <img
-                src={personalProfile.portraitImage}
+                src={getAssetUrl(personalProfile.portraitImage)}
                 alt={`Portrait of ${personalProfile.name}`}
                 className="w-full h-full object-cover"
                 loading="lazy"

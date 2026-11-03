@@ -20,6 +20,7 @@ import { CaseStudyData } from '../types/portfolio';
 import { WhatIDidSection } from './WhatIDidSection';
 import { ResultsSection } from './ResultsSection';
 import { EditableProjectTags } from './EditableProjectTags';
+import { getAssetUrl } from '../utils/assetUrl';
 
 interface CaseStudyDetailProps {
   caseStudy: CaseStudyData;
@@ -383,14 +384,14 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
           <div className="relative mt-12 h-[460px] sm:h-[540px] overflow-hidden rounded-2xl border border-border bg-card/80 flex items-center justify-center">
             {/* Ambient blurred backdrop */}
             <img
-              src={caseStudy.detailImage || caseStudy.image}
+              src={getAssetUrl(caseStudy.detailImage || caseStudy.image)}
               alt=""
               aria-hidden="true"
               className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-30 scale-125 dark:opacity-20"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/40" />
             <img
-              src={caseStudy.detailImage || caseStudy.image}
+              src={getAssetUrl(caseStudy.detailImage || caseStudy.image)}
               alt={`Cover image for ${caseStudy.title}`}
               className="relative z-10 h-full max-h-[440px] sm:max-h-[500px] w-auto object-contain rounded-xl shadow-2xl py-3 px-4 drop-shadow-xl"
               referrerPolicy="no-referrer"
@@ -399,7 +400,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
         ) : (
           <div className="relative mt-12 aspect-[16/8] overflow-hidden rounded-2xl border border-border bg-muted">
             <img
-              src={caseStudy.detailImage || caseStudy.image}
+              src={getAssetUrl(caseStudy.detailImage || caseStudy.image)}
               alt={`Cover image for ${caseStudy.title}`}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -557,7 +558,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
                   {!isEditMode ? (
                     <div onClick={() => setActiveLightboxIndex(idx)} className="relative w-full h-full">
                       <img
-                        src={img.src}
+                        src={getAssetUrl(img.src)}
                         alt={img.caption}
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         loading="lazy"
@@ -592,7 +593,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
                       {/* Image Preview & Order Controls */}
                       <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-muted">
                         <img
-                          src={img.src}
+                          src={getAssetUrl(img.src)}
                           alt={img.caption}
                           className="w-full h-full object-cover"
                         />
@@ -743,7 +744,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
                 </div>
               ) : (
                 <img
-                  src={activeItem.src}
+                  src={getAssetUrl(activeItem.src)}
                   alt={activeItem.caption}
                   className="max-h-full max-w-full object-contain rounded-lg shadow-2xl"
                   referrerPolicy="no-referrer"

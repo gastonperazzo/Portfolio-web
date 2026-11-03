@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-background: var(--bg-color, #151410);
+  --color-foreground: var(--fg-color, #edebe7);
+  
+  --color-card: var(--card-color, #1e1d19);
+  --color-card-foreground: var(--card-fg-color, #edebe7);
+  
+  --color-popover: var(--card-color, #1e1d19);
+  --color-popover-foreground: var(--card-fg-color, #edebe7);
+  
+  --color-primary: var(--primary-color, #e7a200);
+  --color-primary-foreground: var(--primary-fg-color, #0b121d);
+  
+  --color-secondary: var(--secondary-color, #2a2924);
+  --color-secondary-foreground: var(--secondary-fg-color, #edebe7);
+  
+  --color-muted: var(--muted-color, #2a2924);
+  --color-muted-foreground: var(--muted-fg-color, #9b9891);
+  
+  --color-accent: var(--accent-color, #2c2415);
+  --color-accent-foreground: var(--accent-fg-color, #f4be47);
+  
+  --color-destructive: #ff6568;
+  --color-border: var(--border-color, rgba(255, 255, 255, 0.1));
+  --color-input: var(--border-color, rgba(255, 255, 255, 0.15));
+  --color-ring: var(--primary-color, #e7a200);
+}
+
+/* =========================================
+   🌙 DARK MODE VARIATIONS
+   ========================================= */
+
+/* Palette 1: Original Gold (Default) */
+:root, [data-theme="palette-1"] {
+  color-scheme: dark;
+  --bg-color: #151410;
+  --fg-color: #edebe7;
+  --card-color: #1e1d19;
+  --card-fg-color: #edebe7;
+  --primary-color: #e7a200;
+  --primary-fg-color: #0b121d;
+  --secondary-color: #2a2924;
+  --secondary-fg-color: #edebe7;
+  --muted-color: #2a2924;
+  --muted-fg-color: #9b9891;
+  --accent-color: #2c2415;
+  --accent-fg-color: #f4be47;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Palette 2: Warm Terracotta Sunset (Dark) */
+[data-theme="palette-2"] {
+  color-scheme: dark;
+  --bg-color: #181210;
+  --fg-color: #f5ebe6;
+  --card-color: #241b18;
+  --card-fg-color: #f5ebe6;
+  --primary-color: #f97316;
+  --primary-fg-color: #210900;
+  --secondary-color: #382924;
+  --secondary-fg-color: #f5ebe6;
+  --muted-color: #382924;
+  --muted-fg-color: #b59b92;
+  --accent-color: #421c0e;
+  --accent-fg-color: #fb923c;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Palette 3: Slate Minimal (Dark) */
+[data-theme="palette-3"] {
+  color-scheme: dark;
+  --bg-color: #0e0f12;
+  --fg-color: #f8fafc;
+  --card-color: #181a20;
+  --card-fg-color: #f8fafc;
+  --primary-color: #38bdf8;
+  --primary-fg-color: #031420;
+  --secondary-color: #232733;
+  --secondary-fg-color: #f8fafc;
+  --muted-color: #232733;
+  --muted-fg-color: #94a3b8;
+  --accent-color: #1a2c38;
+  --accent-fg-color: #7dd3fc;
+  --border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Palette 4: Deep Bronze & Ochre (Dark) */
+[data-theme="palette-4"] {
+  color-scheme: dark;
+  --bg-color: #13110e;
+  --fg-color: #f5f2eb;
+  --card-color: #1f1c17;
+  --card-fg-color: #f5f2eb;
+  --primary-color: #d97706;
+  --primary-fg-color: #1a0c00;
+  --secondary-color: #2e2820;
+  --secondary-fg-color: #f5f2eb;
+  --muted-color: #2e2820;
+  --muted-fg-color: #a3998a;
+  --accent-color: #382208;
+  --accent-fg-color: #f59e0b;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Palette 5: Navy Executive (Dark) */
+[data-theme="palette-5"] {
+  color-scheme: dark;
+  --bg-color: #0a0e17;
+  --fg-color: #e2e8f0;
+  --card-color: #131a29;
+  --card-fg-color: #e2e8f0;
+  --primary-color: #6366f1;
+  --primary-fg-color: #ffffff;
+  --secondary-color: #1e293b;
+  --secondary-fg-color: #e2e8f0;
+  --muted-color: #1e293b;
+  --muted-fg-color: #94a3b8;
+  --accent-color: #1e1b4b;
+  --accent-fg-color: #818cf8;
+  --border-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================
+   ☀️ LIGHT MODE VARIATIONS
+   ========================================= */
+
+/* Palette 6: Studio Paper Light */
+[data-theme="palette-6"] {
+  color-scheme: light;
+  --bg-color: #f8fafc;
+  --fg-color: #0f172a;
+  --card-color: #ffffff;
+  --card-fg-color: #0f172a;
+  --primary-color: #2563eb;
+  --primary-fg-color: #ffffff;
+  --secondary-color: #f1f5f9;
+  --secondary-fg-color: #0f172a;
+  --muted-color: #f1f5f9;
+  --muted-fg-color: #64748b;
+  --accent-color: #eff6ff;
+  --accent-fg-color: #1d4ed8;
+  --border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Palette 7: Warm Sand & Charcoal (Editorial Light) */
+[data-theme="palette-7"] {
+  color-scheme: light;
+  --bg-color: #f7f5f0;
+  --fg-color: #1c1917;
+  --card-color: #ffffff;
+  --card-fg-color: #1c1917;
+  --primary-color: #1c1917;
+  --primary-fg-color: #ffffff;
+  --secondary-color: #e7e5e0;
+  --secondary-fg-color: #1c1917;
+  --muted-color: #e7e5e0;
+  --muted-fg-color: #78716c;
+  --accent-color: #f5f5f4;
+  --accent-fg-color: #0c0a09;
+  --border-color: rgba(28, 25, 23, 0.12);
+}
+
+/* Palette 8: Soft Sage & Forest (Light) */
+[data-theme="palette-8"] {
+  color-scheme: light;
+  --bg-color: #f4f6f4;
+  --fg-color: #14231b;
+  --card-color: #ffffff;
+  --card-fg-color: #14231b;
+  --primary-color: #059669;
+  --primary-fg-color: #ffffff;
+  --secondary-color: #e2e8e4;
+  --secondary-fg-color: #14231b;
+  --muted-color: #e2e8e4;
+  --muted-fg-color: #5c7567;
+  --accent-color: #ecfdf5;
+  --accent-fg-color: #047857;
+  --border-color: rgba(20, 35, 27, 0.12);
+}
+
+/* Palette 9: Warm Ivory & Terracotta (Light) */
+[data-theme="palette-9"] {
+  color-scheme: light;
+  --bg-color: #faf6f0;
+  --fg-color: #291d18;
+  --card-color: #ffffff;
+  --card-fg-color: #291d18;
+  --primary-color: #ea580c;
+  --primary-fg-color: #ffffff;
+  --secondary-color: #f0e6dc;
+  --secondary-fg-color: #291d18;
+  --muted-color: #f0e6dc;
+  --muted-fg-color: #8c7368;
+  --accent-color: #fff7ed;
+  --accent-fg-color: #c2410c;
+  --border-color: rgba(41, 29, 24, 0.12);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-foreground);
+}
+
+/* Experience timeline separator lines and hover highlight */
+.experience-item {
+  border-left: 2px solid var(--color-border);
+  transition: border-color 0.25s ease;
+}
+
+.experience-item:hover {
+  border-left-color: var(--color-primary);
+}
+

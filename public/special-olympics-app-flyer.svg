@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1550" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+      .headline { font-family: 'Inter', -apple-system, sans-serif; font-weight: 900; fill: #0077b6; }
+      .subhead { font-family: 'Inter', -apple-system, sans-serif; font-weight: 600; fill: #023e8a; }
+      .body-txt { font-family: 'Inter', -apple-system, sans-serif; font-weight: 400; fill: #334155; }
+      .feature-title { font-family: 'Inter', -apple-system, sans-serif; font-weight: 800; fill: #0077b6; }
+      .cta-title { font-family: 'Inter', -apple-system, sans-serif; font-weight: 800; fill: #023e8a; }
+    </style>
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="blue-btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="teal-btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <filter id="phone-shadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Clean White Poster Background -->
+  <rect width="1200" height="1550" fill="#ffffff"/>
+
+  <!-- Top Blue Decorative Wave -->
+  <path d="M 0 0 L 1200 0 L 1200 380 C 1000 420 800 320 600 360 C 400 400 200 340 0 380 Z" fill="url(#header-grad)"/>
+
+  <!-- Left: Large Smartphone Mockup -->
+  <g transform="translate(100, 100)" filter="url(#phone-shadow)">
+    <!-- Phone Bezel -->
+    <rect width="420" height="780" rx="46" fill="#1e293b"/>
+    <rect x="12" y="12" width="396" height="756" rx="38" fill="#f8fafc"/>
+    <!-- Top Notch -->
+    <path d="M 140 12 L 280 12 A 16 16 0 0 1 296 28 L 296 34 A 12 12 0 0 1 284 46 L 136 46 A 12 12 0 0 1 124 34 L 124 28 A 16 16 0 0 1 140 12 Z" fill="#1e293b"/>
+
+    <!-- App Header UI -->
+    <g transform="translate(35, 65)">
+      <text x="0" y="24" font-size="22" font-family="'Inter', sans-serif" font-weight="800" fill="#0f172a">Welcome back</text>
+      <text x="0" y="44" font-size="14" font-family="'Inter', sans-serif" font-weight="500" fill="#64748b">Cassandra Ryan</text>
+      <!-- User Avatar Circle -->
+      <circle cx="320" cy="30" r="18" fill="#0d9488"/>
+      <text x="320" y="36" text-anchor="middle" font-size="14" font-family="'Inter', sans-serif" font-weight="700" fill="#ffffff">C</text>
+
+      <!-- Horizontal Child Tabs -->
+      <g transform="translate(0, 68)">
+        <rect x="0" y="0" width="85" height="30" rx="15" fill="#e0f2fe"/>
+        <text x="42" y="20" text-anchor="middle" font-size="12" font-family="'Inter', sans-serif" font-weight="700" fill="#0284c7">Amanda</text>
+        
+        <rect x="95" y="0" width="70" height="30" rx="15" fill="#f1f5f9"/>
+        <text x="130" y="20" text-anchor="middle" font-size="12" font-family="'Inter', sans-serif" font-weight="500" fill="#64748b">Arthur</text>
+        
+        <rect x="175" y="0" width="70" height="30" rx="15" fill="#f1f5f9"/>
+        <text x="210" y="20" text-anchor="middle" font-size="12" font-family="'Inter', sans-serif" font-weight="500" fill="#64748b">Infant</text>
+        
+        <rect x="255" y="0" width="55" height="30" rx="15" fill="#f1f5f9"/>
+        <text x="282" y="20" text-anchor="middle" font-size="12" font-family="'Inter', sans-serif" font-weight="500" fill="#64748b">ED</text>
+      </g>
+
+      <!-- Search Input Box -->
+      <rect x="0" y="115" width="350" height="38" rx="8" fill="#f1f5f9"/>
+      <text x="36" y="139" font-size="13" font-family="'Inter', sans-serif" fill="#94a3b8">Search activities...</text>
+
+      <!-- Activities Section -->
+      <text x="0" y="185" font-size="16" font-family="'Inter', sans-serif" font-weight="700" fill="#0f172a">Activities for Amanda</text>
+      <text x="290" y="185" font-size="12" font-family="'Inter', sans-serif" font-weight="600" fill="#0284c7">Progress 4</text>
+
+      <!-- Activity Cards (Handball & Smile) -->
+      <g transform="translate(0, 205)">
+        <!-- Card 1 (Magenta/Handball) -->
+        <rect width="165" height="190" rx="16" fill="#ec4899"/>
+        <rect x="0" y="135" width="165" height="55" rx="0" fill="#be185d"/>
+        <text x="82" y="170" text-anchor="middle" font-size="15" font-family="'Inter', sans-serif" font-weight="700" fill="#ffffff">Handball</text>
+        <!-- Child throwing ball icon -->
+        <circle cx="82" cy="70" r="32" fill="#ffffff" opacity="0.3"/>
+        <circle cx="82" cy="70" r="16" fill="#ffffff"/>
+
+        <!-- Card 2 (Teal/Smile) -->
+        <g transform="translate(180, 0)">
+          <rect width="165" height="190" rx="16" fill="#14b8a6"/>
+          <rect x="0" y="135" width="165" height="55" rx="0" fill="#0f766e"/>
+          <text x="82" y="170" text-anchor="middle" font-size="15" font-family="'Inter', sans-serif" font-weight="700" fill="#ffffff">Smile</text>
+          <circle cx="82" cy="70" r="32" fill="#ffffff" opacity="0.3"/>
+          <path d="M 68 70 Q 82 86 96 70" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- Bottom Tab Bar in App -->
+      <g transform="translate(0, 610)">
+        <line x1="-15" y1="0" x2="365" y2="0" stroke="#e2e8f0" stroke-width="1"/>
+        <circle cx="35" cy="35" r="14" fill="#0284c7"/>
+        <circle cx="120" cy="35" r="14" fill="#94a3b8" opacity="0.4"/>
+        <circle cx="205" cy="35" r="14" fill="#94a3b8" opacity="0.4"/>
+        <circle cx="290" cy="35" r="14" fill="#94a3b8" opacity="0.4"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Headline & Description -->
+  <g transform="translate(570, 130)">
+    <text x="0" y="0" font-size="46" class="headline" letter-spacing="-0.02em">
+      <tspan x="0" dy="0">EMPOWER</tspan>
+      <tspan x="0" dy="54">FAMILIES</tspan>
+      <tspan x="0" dy="54">THROUGH PLAY</tspan>
+    </text>
+
+    <text x="0" y="210" font-size="19" class="body-txt" line-height="1.5">
+      <tspan x="0" dy="0">The Young Athletes app helps families</tspan>
+      <tspan x="0" dy="30">of children 0–7 bring purposeful play</tspan>
+      <tspan x="0" dy="30">into daily life and gives providers tools</tspan>
+      <tspan x="0" dy="30">to support stronger family partnerships.</tspan>
+    </text>
+
+    <!-- Three Value Propositions / Bullet Points with Circular Icons -->
+    <g transform="translate(0, 360)">
+      <!-- Bullet 1: Personalized Play -->
+      <g transform="translate(0, 0)">
+        <circle cx="35" cy="35" r="32" fill="#0284c7"/>
+        <!-- Basketball/play icon -->
+        <circle cx="35" cy="35" r="18" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="17" y1="35" x2="53" y2="35" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="35" y1="17" x2="35" y2="53" stroke="#ffffff" stroke-width="2.5"/>
+        
+        <text x="85" y="28" font-size="20" class="feature-title">PERSONALIZED PLAY</text>
+        <text x="85" y="52" font-size="15" class="body-txt">Activities are recommended based on each</text>
+        <text x="85" y="72" font-size="15" class="body-txt">child's individual development.</text>
+      </g>
+
+      <!-- Bullet 2: Health Information -->
+      <g transform="translate(0, 130)">
+        <circle cx="35" cy="35" r="32" fill="#0284c7"/>
+        <circle cx="35" cy="26" r="3" fill="#ffffff"/>
+        <line x1="35" y1="33" x2="35" y2="46" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="35" cy="35" r="20" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+
+        <text x="85" y="28" font-size="20" class="feature-title">HEALTH INFORMATION</text>
+        <text x="85" y="52" font-size="15" class="body-txt">Evidence-based videos, tips and resources to support</text>
+        <text x="85" y="72" font-size="15" class="body-txt">a child's health and development after diagnosis.</text>
+      </g>
+
+      <!-- Bullet 3: Family & Provider Connection -->
+      <g transform="translate(0, 260)">
+        <circle cx="35" cy="35" r="32" fill="#0284c7"/>
+        <!-- Chat bubbles icon -->
+        <ellipse cx="32" cy="32" rx="14" ry="11" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="26" y1="41" x2="22" y2="47" stroke="#ffffff" stroke-width="2.5"/>
+
+        <text x="85" y="28" font-size="20" class="feature-title">FAMILY &amp; PROVIDER CONNECTION</text>
+        <text x="85" y="52" font-size="15" class="body-txt">Engage with families directly and see suggested</text>
+        <text x="85" y="72" font-size="15" class="body-txt">activities for each child in your care.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BOTTOM SECTION: APP DOWNLOAD CTA & QR CODES -->
+  <g transform="translate(100, 960)">
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(0, 40)">
+      <text x="0" y="30" font-size="26" class="cta-title">DOWNLOAD THE</text>
+      <text x="0" y="62" font-size="26" class="cta-title">YOUNG ATHLETES APP</text>
+      <text x="0" y="94" font-size="26" class="cta-title">TODAY</text>
+      <text x="0" y="130" font-size="14" font-style="italic" fill="#64748b">The Young Athletes app is FREE for all families &amp; providers.</text>
+
+      <!-- QR Codes with App Badges -->
+      <g transform="translate(0, 160)">
+        <!-- Google Play -->
+        <rect width="250" height="70" rx="12" fill="url(#teal-btn)"/>
+        <!-- QR Code Graphic -->
+        <rect x="15" y="10" width="50" height="50" rx="4" fill="#ffffff"/>
+        <!-- QR pattern squares -->
+        <rect x="21" y="16" width="16" height="16" fill="#0f766e"/>
+        <rect x="25" y="20" width="8" height="8" fill="#ffffff"/>
+        <rect x="43" y="16" width="16" height="16" fill="#0f766e"/>
+        <rect x="47" y="20" width="8" height="8" fill="#ffffff"/>
+        <rect x="21" y="38" width="16" height="16" fill="#0f766e"/>
+        <rect x="25" y="42" width="8" height="8" fill="#ffffff"/>
+        <rect x="43" y="38" width="6" height="6" fill="#0f766e"/>
+        <rect x="53" y="48" width="6" height="6" fill="#0f766e"/>
+        <text x="80" y="36" font-size="12" font-family="'Inter', sans-serif" font-weight="600" fill="#ffffff">GET IT ON</text>
+        <text x="80" y="54" font-size="16" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff">GOOGLE PLAY</text>
+
+        <!-- App Store -->
+        <g transform="translate(0, 90)">
+          <rect width="250" height="70" rx="12" fill="url(#teal-btn)"/>
+          <rect x="15" y="10" width="50" height="50" rx="4" fill="#ffffff"/>
+          <rect x="21" y="16" width="16" height="16" fill="#0f766e"/>
+          <rect x="25" y="20" width="8" height="8" fill="#ffffff"/>
+          <rect x="43" y="16" width="16" height="16" fill="#0f766e"/>
+          <rect x="47" y="20" width="8" height="8" fill="#ffffff"/>
+          <rect x="21" y="38" width="16" height="16" fill="#0f766e"/>
+          <rect x="25" y="42" width="8" height="8" fill="#ffffff"/>
+          <rect x="43" y="38" width="6" height="6" fill="#0f766e"/>
+          <rect x="53" y="48" width="6" height="6" fill="#0f766e"/>
+          <text x="80" y="36" font-size="12" font-family="'Inter', sans-serif" font-weight="600" fill="#ffffff">DOWNLOAD ON</text>
+          <text x="80" y="54" font-size="16" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff">APPLE APP STORE</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Right: Invite families connection phone + Special Olympics logo -->
+    <g transform="translate(480, 40)">
+      <!-- Second Phone Mockup -->
+      <g transform="translate(0, 30)">
+        <rect width="180" height="340" rx="24" fill="#1e293b"/>
+        <rect x="8" y="8" width="164" height="324" rx="18" fill="#ffffff"/>
+        <!-- App header -->
+        <rect x="8" y="8" width="164" height="42" fill="#0284c7"/>
+        <text x="90" y="34" text-anchor="middle" font-size="11" font-family="'Inter', sans-serif" font-weight="700" fill="#ffffff">My Children</text>
+        <rect x="20" y="65" width="140" height="40" rx="8" fill="#f1f5f9"/>
+        <text x="32" y="88" font-size="11" font-family="'Inter', sans-serif" font-weight="600" fill="#0f172a">Amanda Ryan</text>
+        <rect x="20" y="115" width="140" height="35" rx="8" fill="#e0e7ff"/>
+        <text x="90" y="136" text-anchor="middle" font-size="10" font-family="'Inter', sans-serif" font-weight="700" fill="#4338ca">Invite a Provider</text>
+      </g>
+
+      <!-- Connection callout text -->
+      <g transform="translate(210, 70)">
+        <text x="0" y="0" font-size="20" font-style="italic" font-family="'Inter', sans-serif" font-weight="700" fill="#0077b6">Invite families to connect with you!</text>
+        <text x="0" y="38" font-size="15" class="body-txt">Once a family shares their child's</text>
+        <text x="0" y="58" font-size="15" class="body-txt">profile, you can view their</text>
+        <text x="0" y="78" font-size="15" class="body-txt">recommended activities.</text>
+      </g>
+
+      <!-- Special Olympics Logo at very bottom -->
+      <g transform="translate(210, 240)">
+        <circle cx="25" cy="25" r="22" fill="#e11d48"/>
+        <!-- Special Olympics figures -->
+        <circle cx="25" cy="25" r="14" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="25" y1="11" x2="25" y2="39" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="11" y1="25" x2="39" y2="25" stroke="#ffffff" stroke-width="2.5"/>
+        <text x="60" y="24" font-size="18" font-family="'Inter', sans-serif" font-weight="800" fill="#0f172a">Special Olympics</text>
+        <text x="60" y="44" font-size="20" font-family="'Inter', sans-serif" font-weight="900" fill="#0284c7">Young Athletes</text>
+      </g>
+    </g>
+  </g>
+</svg>

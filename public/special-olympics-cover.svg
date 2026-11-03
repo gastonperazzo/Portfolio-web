@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap');
+      .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
+    </style>
+    <linearGradient id="sky-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfe3f7"/>
+      <stop offset="40%" stop-color="#d6edfa"/>
+      <stop offset="100%" stop-color="#eaf5fc"/>
+    </linearGradient>
+    <linearGradient id="grass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#557a2b"/>
+      <stop offset="30%" stop-color="#699632"/>
+      <stop offset="70%" stop-color="#7ea83c"/>
+      <stop offset="100%" stop-color="#8dbb42"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="480" fill="url(#sky-grad)"/>
+
+  <!-- Background Park Pavilion Gazebo Canopy & Trees -->
+  <g opacity="0.6">
+    <!-- Green trees in background -->
+    <ellipse cx="250" cy="380" rx="180" ry="120" fill="#4d6e27"/>
+    <ellipse cx="600" cy="360" rx="220" ry="140" fill="#3f5a20"/>
+    <ellipse cx="1400" cy="370" rx="260" ry="130" fill="#466523"/>
+
+    <!-- Pavilion roof & white tents -->
+    <polygon points="180,340 380,240 580,340" fill="#758278"/>
+    <line x1="220" y1="340" x2="220" y2="440" stroke="#5a635d" stroke-width="8"/>
+    <line x1="540" y1="340" x2="540" y2="440" stroke="#5a635d" stroke-width="8"/>
+
+    <!-- White Event Canopy Tent -->
+    <polygon points="1200,320 1380,230 1560,320" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Soccer Goal Yellow Netting in Midground -->
+  <g stroke="#ffcc00" stroke-width="2.5" opacity="0.45">
+    <line x1="0" y1="120" x2="1600" y2="120"/>
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="280" x2="1600" y2="280"/>
+    <line x1="0" y1="360" x2="1600" y2="360"/>
+    <line x1="0" y1="440" x2="1600" y2="440"/>
+    <!-- Diagonal mesh -->
+    <line x1="100" y1="50" x2="600" y2="500"/>
+    <line x1="300" y1="50" x2="800" y2="500"/>
+    <line x1="500" y1="50" x2="1000" y2="500"/>
+    <line x1="700" y1="50" x2="1200" y2="500"/>
+    <line x1="900" y1="50" x2="1400" y2="500"/>
+    <line x1="600" y1="50" x2="100" y2="500"/>
+    <line x1="800" y1="50" x2="300" y2="500"/>
+    <line x1="1000" y1="50" x2="500" y2="500"/>
+    <line x1="1200" y1="50" x2="700" y2="500"/>
+    <line x1="1400" y1="50" x2="900" y2="500"/>
+  </g>
+
+  <!-- Green Grass Lawn Field -->
+  <rect y="440" width="1600" height="560" fill="url(#grass-grad)"/>
+
+  <!-- RUNNING CHILDREN IN BRIGHT ORANGE "SPECIAL OLYMPICS YOUNG ATHLETES" SHIRTS -->
+
+  <!-- Child 1 (Left foreground): Cheerful curly-haired boy reaching forward with wide joyful smile -->
+  <g transform="translate(340, 500)">
+    <!-- Shadow on grass -->
+    <ellipse cx="0" cy="460" rx="160" ry="35" fill="#2c4212" opacity="0.5"/>
+
+    <!-- Running Legs -->
+    <path d="M -60 300 L -90 420 L -120 440" stroke="#1e293b" stroke-width="48" stroke-linecap="round"/>
+    <path d="M 40 300 L 70 390 L 110 430" stroke="#1e293b" stroke-width="48" stroke-linecap="round"/>
+    <!-- Sneakers -->
+    <ellipse cx="-130" cy="445" rx="36" ry="18" fill="#3b82f6"/>
+    <ellipse cx="120" cy="435" rx="36" ry="18" fill="#3b82f6"/>
+
+    <!-- Bright Orange T-shirt Body -->
+    <path d="M -160 160 C -180 200 -120 320 -70 330 L 70 330 C 120 320 180 200 160 160 C 130 90 -130 90 -160 160 Z" fill="#ff5a00"/>
+
+    <!-- Reaching Forward Arm (Left) -->
+    <path d="M -140 160 L -230 260 L -190 280" stroke="#ff5a00" stroke-width="46" stroke-linecap="round"/>
+    <circle cx="-230" cy="275" r="28" fill="#8d5b4c"/>
+
+    <!-- Trailing Arm (Right) -->
+    <path d="M 130 160 L 220 220 L 240 200" stroke="#ff5a00" stroke-width="42" stroke-linecap="round"/>
+    <circle cx="240" cy="205" r="24" fill="#8d5b4c"/>
+
+    <!-- Young Athletes Shirt Graphic/Text -->
+    <g transform="translate(-10, 220)">
+      <circle cx="-65" cy="-2" r="14" fill="#ffffff" opacity="0.9"/>
+      <path d="M -65 -12 C -65 -2 -57 0 -65 10 C -73 0 -65 -2 -65 -12 Z" fill="#ff5a00"/>
+      <text x="-42" y="-4" font-size="16" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff" letter-spacing="0.02em">Special Olympics</text>
+      <text x="-42" y="16" font-size="20" font-family="'Inter', sans-serif" font-weight="900" fill="#ffffff" letter-spacing="0.04em">Young Athletes</text>
+    </g>
+
+    <!-- Head & Neck -->
+    <rect x="-24" y="60" width="48" height="50" fill="#8d5b4c"/>
+    <ellipse cx="0" cy="20" rx="90" ry="105" fill="#8d5b4c"/>
+    
+    <!-- Big joyful smile showing teeth -->
+    <path d="M -44 38 Q 0 95 44 38 Z" fill="#ffffff"/>
+    <path d="M -44 38 Q 0 95 44 38" fill="none" stroke="#5a3124" stroke-width="4"/>
+    <path d="M -36 40 Q 0 65 36 40" fill="#8d5b4c"/>
+
+    <!-- Bright joyful eyes & eyebrows -->
+    <ellipse cx="-34" cy="-5" rx="10" ry="13" fill="#1e1815"/>
+    <circle cx="-31" cy="-8" r="4" fill="#ffffff"/>
+    <ellipse cx="34" cy="-5" rx="10" ry="13" fill="#1e1815"/>
+    <circle cx="37" cy="-8" r="4" fill="#ffffff"/>
+    <path d="M -50 -26 Q -34 -38 -18 -26" fill="none" stroke="#36221c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 18 -26 Q 34 -38 50 -26" fill="none" stroke="#36221c" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Abundant black curly hair -->
+    <g fill="#1a1412">
+      <circle cx="-70" cy="-60" r="42"/>
+      <circle cx="-35" cy="-85" r="46"/>
+      <circle cx="15" cy="-90" r="48"/>
+      <circle cx="65" cy="-70" r="44"/>
+      <circle cx="-85" cy="-20" r="38"/>
+      <circle cx="85" cy="-25" r="38"/>
+      <circle cx="-50" cy="-40" r="40"/>
+      <circle cx="0" cy="-60" r="42"/>
+      <circle cx="45" cy="-45" r="40"/>
+    </g>
+  </g>
+
+  <!-- Child 2 (Center): Happy boy running in orange shirt with red long sleeves -->
+  <g transform="translate(760, 580)">
+    <ellipse cx="0" cy="360" rx="120" ry="25" fill="#2c4212" opacity="0.4"/>
+    <!-- Orange shirt with red long-sleeve cuffs -->
+    <path d="M -90 100 C -110 130 -80 230 -40 240 L 40 240 C 80 230 110 130 90 100 C 70 50 -70 50 -90 100 Z" fill="#ff5a00"/>
+    <!-- Red sleeve reaching forward -->
+    <path d="M 70 120 L 140 180" stroke="#cc2200" stroke-width="32" stroke-linecap="round"/>
+    <circle cx="150" cy="190" r="18" fill="#f8c8ad"/>
+    <!-- Shirt text -->
+    <text x="0" y="160" text-anchor="middle" font-size="14" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff">Special Olympics</text>
+    <text x="0" y="180" text-anchor="middle" font-size="16" font-family="'Inter', sans-serif" font-weight="900" fill="#ffffff">Young Athletes™</text>
+
+    <!-- Head -->
+    <ellipse cx="0" cy="0" rx="64" ry="74" fill="#f8c8ad"/>
+    <path d="M -30 20 Q 0 52 30 20 Z" fill="#ffffff"/>
+    <ellipse cx="-22" cy="-8" rx="7" ry="8" fill="#1e1815"/>
+    <ellipse cx="22" cy="-8" rx="7" ry="8" fill="#1e1815"/>
+    <!-- Dark neat hair -->
+    <path d="M -60 -15 C -65 -65 65 -65 60 -15 C 40 -40 -40 -40 -60 -15 Z" fill="#2d1d16"/>
+  </g>
+
+  <!-- Child 3 (Right foreground): Joyful boy with glasses running with great enthusiasm -->
+  <g transform="translate(1200, 520)">
+    <ellipse cx="0" cy="440" rx="140" ry="30" fill="#2c4212" opacity="0.45"/>
+    <!-- Orange shirt -->
+    <path d="M -120 120 C -140 160 -90 280 -50 290 L 50 290 C 90 280 140 160 120 120 C 90 60 -90 60 -120 120 Z" fill="#ff5a00"/>
+    <text x="0" y="195" text-anchor="middle" font-size="15" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff">Special Olympics</text>
+    <text x="0" y="218" text-anchor="middle" font-size="18" font-family="'Inter', sans-serif" font-weight="900" fill="#ffffff">Young Athletes</text>
+    
+    <!-- Head -->
+    <ellipse cx="0" cy="20" rx="78" ry="88" fill="#f5cbb3"/>
+    <!-- Glasses -->
+    <rect x="-56" y="2" width="46" height="28" rx="6" fill="none" stroke="#333333" stroke-width="4"/>
+    <rect x="10" y="2" width="46" height="28" rx="6" fill="none" stroke="#333333" stroke-width="4"/>
+    <line x1="-10" y1="16" x2="10" y2="16" stroke="#333333" stroke-width="4"/>
+    <!-- Big open smile -->
+    <path d="M -32 46 Q 0 85 32 46 Z" fill="#ffffff"/>
+    <path d="M -32 46 Q 0 85 32 46" fill="none" stroke="#883322" stroke-width="3"/>
+    <!-- Spiky light-brown hair -->
+    <path d="M -65 -20 C -70 -70 -20 -95 0 -85 C 20 -95 70 -70 65 -20 Z" fill="#7a5230"/>
+  </g>
+
+  <!-- Header Banner Ribbon Overlay -->
+  <g transform="translate(80, 80)">
+    <rect width="520" height="64" rx="10" fill="#ff5a00" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.25))"/>
+    <circle cx="44" cy="32" r="18" fill="#ffffff"/>
+    <circle cx="44" cy="32" r="10" fill="#ff5a00"/>
+    <text x="76" y="40" font-size="24" font-family="'Inter', sans-serif" font-weight="800" fill="#ffffff" letter-spacing="0.02em">Special Olympics · Young Athletes</text>
+  </g>
+</svg>

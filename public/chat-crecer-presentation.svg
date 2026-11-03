@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1060" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .font-main { font-family: 'Inter', -apple-system, sans-serif; }
+    </style>
+    <linearGradient id="wall-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dedcd6"/>
+      <stop offset="65%" stop-color="#eceae3"/>
+      <stop offset="100%" stop-color="#f5f3ec"/>
+    </linearGradient>
+    <linearGradient id="wood-panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5226"/>
+      <stop offset="15%" stop-color="#9a5f2f"/>
+      <stop offset="50%" stop-color="#7e461d"/>
+      <stop offset="100%" stop-color="#673714"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Auditorio Wall & Presentation Screen Background -->
+  <rect width="1600" height="740" fill="url(#wall-grad)"/>
+
+  <!-- Presentation Projection on Screen -->
+  <g transform="translate(800, 260)" opacity="0.32">
+    <!-- Chat Crecer Logo on Slide -->
+    <rect x="-320" y="-140" width="640" height="130" rx="65" fill="none" stroke="#2a3b5c" stroke-width="12"/>
+    <text x="0" y="-50" text-anchor="middle" font-size="82" font-family="'Inter', sans-serif" font-weight="700" fill="#2a3b5c">Chat Crecer</text>
+    <text x="0" y="55" text-anchor="middle" font-size="54" font-family="'Inter', sans-serif" font-weight="600" fill="#2a3b5c">#Elchatdelembarazo</text>
+  </g>
+
+  <!-- Wooden Wainscot Panel at Base -->
+  <rect x="0" y="740" width="1600" height="320" fill="url(#wood-panel)"/>
+  <line x1="0" y1="740" x2="1600" y2="740" stroke="#502b0e" stroke-width="6"/>
+  <line x1="0" y1="840" x2="1600" y2="840" stroke="#502b0e" stroke-width="2" opacity="0.4"/>
+  <line x1="0" y1="940" x2="1600" y2="940" stroke="#502b0e" stroke-width="2" opacity="0.4"/>
+
+  <!-- Stage Lighting Vignette -->
+  <circle cx="800" cy="500" r="750" fill="#ffffff" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- Four Dignitaries & Team Members Silhouette / Illustrated Portrait Group -->
+
+  <!-- Person 1 (Far Left): Gastón Perazzo (UX Researcher & Anthropologist) -->
+  <g transform="translate(320, 360)">
+    <!-- Dark toggle duffle coat over white shirt -->
+    <!-- Coat -->
+    <path d="M -90 190 C -95 120 -60 70 0 70 C 60 70 95 120 90 190 L 115 540 L -115 540 Z" fill="#222326"/>
+    <!-- Toggle coat buttons & loops -->
+    <line x1="-15" y1="210" x2="15" y2="210" stroke="#e0c080" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-15" y1="265" x2="15" y2="265" stroke="#e0c080" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-15" y1="320" x2="15" y2="320" stroke="#e0c080" stroke-width="6" stroke-linecap="round"/>
+    <!-- Open collar showing crisp white shirt -->
+    <path d="M -25 110 L 0 160 L 25 110 L 0 85 Z" fill="#f8fafc"/>
+    <!-- Head & Beard -->
+    <ellipse cx="0" cy="35" rx="42" ry="50" fill="#f8d7c2"/>
+    <!-- Dark greyish brown hair & neat beard -->
+    <path d="M -44 15 C -44 -35 44 -35 44 15 C 44 10 35 -15 0 -15 C -35 -15 -44 10 -44 15 Z" fill="#3a3735"/>
+    <path d="M -40 35 C -35 78 35 78 40 35 C 40 55 25 72 0 72 C -25 72 -40 55 -40 35 Z" fill="#4a4441"/>
+    <!-- Confident warm expression -->
+    <ellipse cx="-14" cy="28" rx="4" ry="4" fill="#2d2825"/>
+    <ellipse cx="14" cy="28" rx="4" ry="4" fill="#2d2825"/>
+    <path d="M -10 50 Q 0 58 10 50" fill="none" stroke="#2d2825" stroke-width="3" stroke-linecap="round"/>
+    <!-- Badge / Label -->
+    <rect x="-80" y="555" width="160" height="28" rx="6" fill="#151410" opacity="0.8"/>
+    <text x="0" y="574" text-anchor="middle" font-size="13" font-family="'Inter', sans-serif" font-weight="700" fill="#e7a200">Gastón Perazzo</text>
+  </g>
+
+  <!-- Person 2: Official / Colleague (Dark Suit) -->
+  <g transform="translate(620, 390)">
+    <!-- Navy formal suit -->
+    <path d="M -80 180 C -85 110 -50 70 0 70 C 50 70 85 110 80 180 L 95 510 L -95 510 Z" fill="#1e2530"/>
+    <path d="M -20 100 L 0 150 L 20 100 Z" fill="#dbeafe"/>
+    <circle cx="-35" cy="140" r="5" fill="#38bdf8"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="35" rx="38" ry="46" fill="#f8d7c2"/>
+    <path d="M -40 15 C -40 -30 40 -30 40 15 Z" fill="#c0c0c0"/>
+    <ellipse cx="-12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <ellipse cx="12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <path d="M -10 52 Q 0 58 10 52" fill="none" stroke="#2d2825" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person 3: Dr. Adolfo Rubinstein (Former Minister of Health) -->
+  <g transform="translate(870, 400)">
+    <!-- Navy blazer with gold buttons & light blue shirt -->
+    <path d="M -80 170 C -85 110 -50 70 0 70 C 50 70 85 110 80 170 L 95 500 L -95 500 Z" fill="#1a233a"/>
+    <path d="M -22 100 L 0 155 L 22 100 Z" fill="#bfdbfe"/>
+    <!-- Gold blazer button -->
+    <circle cx="0" cy="240" r="5" fill="#eab308"/>
+    <!-- Head & Beard -->
+    <ellipse cx="0" cy="35" rx="38" ry="46" fill="#f8d7c2"/>
+    <path d="M -40 20 C -40 -25 40 -25 40 20 Z" fill="#52525b"/>
+    <path d="M -36 38 C -30 72 30 72 36 38 C 36 55 20 68 0 68 C -20 68 -36 55 -36 38 Z" fill="#71717a"/>
+    <ellipse cx="-12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <ellipse cx="12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <path d="M -8 50 Q 0 56 8 50" fill="none" stroke="#2d2825" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="-85" y="515" width="170" height="28" rx="6" fill="#151410" opacity="0.8"/>
+    <text x="0" y="534" text-anchor="middle" font-size="12" font-family="'Inter', sans-serif" font-weight="700" fill="#93c5fd">Dr. Adolfo Rubinstein</text>
+  </g>
+
+  <!-- Person 4: Health Authority / Director (Beige Blazer & Black Top) -->
+  <g transform="translate(1120, 410)">
+    <!-- Light beige/cream tailored jacket over black shirt -->
+    <path d="M -75 160 C -80 100 -45 65 0 65 C 45 65 80 100 75 160 L 90 490 L -90 490 Z" fill="#dfd6c5"/>
+    <!-- Black shirt underneath -->
+    <path d="M -25 90 L 0 145 L 25 90 Z" fill="#18181b"/>
+    <!-- Head & Bob Cut Hair -->
+    <path d="M -48 10 C -48 -35 48 -35 48 10 C 52 45 42 70 32 75 L -32 75 C -42 70 -52 45 -48 10 Z" fill="#6d4c41"/>
+    <ellipse cx="0" cy="35" rx="36" ry="42" fill="#f8d7c2"/>
+    <ellipse cx="-12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <ellipse cx="12" cy="30" rx="3.5" ry="3.5" fill="#2d2825"/>
+    <path d="M -8 50 Q 0 56 8 50" fill="none" stroke="#2d2825" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Timestamp Overlay at bottom right (matches original photo: 10:24 a. m. 24/5/2019) -->
+  <g transform="translate(1420, 690)">
+    <rect x="-10" y="-20" width="180" height="40" rx="4" fill="#000000" opacity="0.5"/>
+    <text x="80" y="6" text-anchor="middle" font-size="15" font-family="'Inter', monospace" font-weight="600" fill="#ffffff">10:24 a.m. 24/5/2019</text>
+  </g>
+
+  <!-- Event Title Ribbon / Caption -->
+  <g transform="translate(80, 80)">
+    <rect width="450" height="54" rx="8" fill="#072b61" opacity="0.95"/>
+    <text x="24" y="34" font-size="20" font-family="'Inter', sans-serif" font-weight="700" fill="#ffffff">Official Presentation · Ministry of Health</text>
+  </g>
+</svg>

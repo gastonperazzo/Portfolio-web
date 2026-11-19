@@ -299,16 +299,6 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
                       </span>
                     </div>
                   )}
-                  {img.tag && (
-                    <div className="absolute top-2.5 left-2.5">
-                      <span className="px-2 py-0.5 text-[10px] font-mono text-white bg-black/70 rounded">
-                        {img.tag}
-                      </span>
-                    </div>
-                  )}
-                  <div className="absolute bottom-0 inset-x-0 p-2.5 bg-gradient-to-t from-black/80 to-transparent text-[11px] text-white/90 line-clamp-1">
-                    {img.caption}
-                  </div>
                 </div>
               ))}
             </div>
@@ -371,7 +361,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
               </button>
             </div>
 
-            <div className="relative flex-1 flex items-center justify-center my-2 max-h-[80vh]">
+            <div className="relative flex-1 flex items-center justify-center my-2 max-h-[85vh]">
               <button
                 onClick={() =>
                   setActiveLightboxIndex(
@@ -388,7 +378,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
                 <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden border border-white/20 shadow-2xl bg-black">
                   <iframe
                     src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1`}
-                    title={activeItem.caption}
+                    title={activeItem.caption || `Slide ${activeLightboxIndex + 1}`}
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -397,7 +387,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
               ) : (
                 <img
                   src={getAssetUrl(activeItem.src)}
-                  alt={activeItem.caption}
+                  alt={activeItem.caption || `Slide ${activeLightboxIndex + 1}`}
                   className="max-h-full max-w-full object-contain rounded-lg shadow-2xl"
                   referrerPolicy="no-referrer"
                 />
@@ -414,14 +404,7 @@ export const CaseStudyDetail: React.FC<CaseStudyDetailProps> = ({
               </button>
             </div>
 
-            <div className="max-w-2xl mx-auto text-center text-white/90 text-xs sm:text-sm bg-black/40 backdrop-blur-md py-3 px-6 rounded-xl border border-white/10">
-              {activeItem.tag && (
-                <span className="inline-block text-[10px] font-mono font-bold text-primary uppercase mr-2">
-                  [{activeItem.tag}]
-                </span>
-              )}
-              <span>{activeItem.caption}</span>
-            </div>
+            <div className="h-4" aria-hidden="true" />
           </div>
         );
       })()}

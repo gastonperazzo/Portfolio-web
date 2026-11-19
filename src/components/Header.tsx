@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemePaletteSwitcher } from './ThemePaletteSwitcher';
 
 interface HeaderProps {
   onNavigateHome: () => void;
@@ -68,8 +67,6 @@ export const Header: React.FC<HeaderProps> = ({
               </a>
             </li>
           </ul>
-
-          <ThemePaletteSwitcher />
         </nav>
       </div>
     </header>

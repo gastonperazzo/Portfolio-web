@@ -212,21 +212,6 @@ export const caseStudiesList: CaseStudyData[] = [
         src: "/special-olympics-app-flyer.svg",
         caption: "Special Olympics Young Athletes app promotional system: 'EMPOWER FAMILIES THROUGH PLAY' with personalized developmental activities and care connections.",
         tag: "Product Flyer & Scope"
-      },
-      {
-        src: "/assets/cases/p025.png",
-        caption: "Qualitative sample breakdown: 20 in-depth individual interviews sliced across professions and child IDD diagnoses.",
-        tag: "Sample Matrix"
-      },
-      {
-        src: "/assets/cases/p028.png",
-        caption: "Core qualitative testimony: the emotional necessity of community connection for overcoming caregiver isolation.",
-        tag: "User Voice"
-      },
-      {
-        src: "/assets/cases/p030.png",
-        caption: "Our Next Steps 4-phase launch architecture: Event Tracking -> Launch MVP -> Testing Stage 2 -> Design & Launch V1.",
-        tag: "Launch Architecture"
       }
     ]
   },
@@ -289,11 +274,6 @@ export const caseStudiesList: CaseStudyData[] = [
         tag: "Co-Creation Working Session"
       },
       {
-        src: "/assets/cases/p038.png",
-        caption: "Persona development and journey mapping boards for key customer segments: Mariana (digital retail) and Santiago (affluent wealth management).",
-        tag: "Personas & Journeys"
-      },
-      {
         src: "/santander-benchmark-revolut-standard.png",
         caption: "Fintech competitive benchmark: Revolut Standard Plan flexible investment account offering 3%–4% APY with on-demand funds, daily interest payouts, and competitive 36-currency exchange rates.",
         tag: "Benchmark: Revolut Standard Plan"
@@ -307,16 +287,6 @@ export const caseStudiesList: CaseStudyData[] = [
         src: "/santander-benchmark-nubank.png",
         caption: "Neobank strategy benchmark dissecting Nubank's community forum, gamified loyalty mechanics, and youth demographic engagement.",
         tag: "Benchmark: Comunidad Nu"
-      },
-      {
-        src: "/assets/cases/p041.png",
-        caption: "Competitive benchmark analysis: Mercury corporate onboarding, automated treasury workflows, and friction-free user experience.",
-        tag: "Benchmark: Mercury"
-      },
-      {
-        src: "/assets/cases/p042.png",
-        caption: "Delivered findings: UX improvements through real-time balance information, simpler IA, and measurement systems.",
-        tag: "Strategic UX Roadmap"
       }
     ]
   },
@@ -366,24 +336,9 @@ export const caseStudiesList: CaseStudyData[] = [
         tag: "Journey Mapping"
       },
       {
-        src: "/connect-teletherapy-logo.png",
-        caption: "Connect Teletherapy brand identity: symbolizing growth, multidisciplinary care, and authentic human connection.",
-        tag: "Brand Identity"
-      },
-      {
-        src: "/assets/cases/p051.png",
-        caption: "Qualitative research breakdown: 25 in-depth interviews across OTs, SLPs, School Counselors, and Families.",
-        tag: "Qualitative Sample"
-      },
-      {
         src: "/assets/cases/p050.png",
         caption: "Wireframe flow exploring core platform mechanics: therapist allocation, kid profile setup, and session notifications.",
         tag: "Workflow Wireframes"
-      },
-      {
-        src: "/case-connect.png",
-        caption: "Child-centered teletherapy session: empowering children to build trust and engage naturally with specialists.",
-        tag: "Clinical Experience"
       }
     ]
   },
@@ -438,29 +393,9 @@ export const caseStudiesList: CaseStudyData[] = [
         tag: "Feedback & Demand"
       },
       {
-        src: "/assets/cases/p064.png",
-        caption: "Dual-workstream methodological framework: diagnostic UX evaluation and usability testing on current vs. iterated flows, conducted alongside the behavioral messaging experiment.",
-        tag: "Dual Workstreams"
-      },
-      {
-        src: "/assets/cases/p065.png",
-        caption: "Comparative usability evaluation of the 'Mini Loan' simulator: testing the current flow vs. an iterated flow with the exact same participant sample across Base, Plus, Black, and Executive segments.",
-        tag: "Usability Testing"
-      },
-      {
         src: "/ueno-push-variants.png",
         caption: "Behavioral push notification experiment testing cognitive biases: Control (standard availability), Social Norm ('More and more customers...'), Exclusivity ('Exclusive pre-approved offer...'), and Loss Aversion ('Don't miss the chance...').",
         tag: "Behavioral Variants"
-      },
-      {
-        src: "/assets/cases/p069.png",
-        caption: "Open rate performance by segment: Social Norm achieved the highest open rate across Base and Plus tiers, while Exclusivity proved most effective for Black tier customers.",
-        tag: "Segment Engagement"
-      },
-      {
-        src: "/assets/cases/p070.png",
-        caption: "Beyond open rates: in the Plus segment, the Social Norm variant generated the highest observed rate of completed loan applications and renewals in Amplitude.",
-        tag: "Business Conversion"
       }
     ]
   },
@@ -534,21 +469,6 @@ export const caseStudiesList: CaseStudyData[] = [
         src: "/assets/cases/p084.png",
         caption: "Merchant Profiles: Feriante (street vendor), Kiosko (corner store), and Retailer: Hipermercado.",
         tag: "Segmentation"
-      },
-      {
-        src: "/assets/cases/p086.png",
-        caption: "Collaborative workshop on checkout counter placement: Bancard as default incumbent vs. Upay positioning.",
-        tag: "Counter Dynamics"
-      },
-      {
-        src: "/assets/cases/p089.png",
-        caption: "4 Stages of Product Adoption Model: Availability -> Activation -> Recurring Usage -> Primary Usage.",
-        tag: "Adoption Model"
-      },
-      {
-        src: "/assets/cases/p091.png",
-        caption: "Risk and Impact Matrix: Classifying card rejection, duplicated charges, lack of promotions, hibernation lag, and tipping leakage.",
-        tag: "Risk Matrix"
       },
       {
         src: "/upay-product-catalog.png",

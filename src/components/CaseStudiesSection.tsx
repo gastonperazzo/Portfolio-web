@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { CaseStudyData } from '../types/portfolio';
-import { EditableProjectTags } from './EditableProjectTags';
 import { getAssetUrl } from '../utils/assetUrl';
 
 interface CaseStudiesSectionProps {
@@ -78,11 +77,17 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({
               <ArrowUpRight className="h-4 w-4" />
             </button>
 
-            {/* Editable Tags / Methodologies Component */}
-            <EditableProjectTags
-              slug={project.slug}
-              defaultTags={project.tags}
-            />
+            {/* Tags Pills */}
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {project.tags.map((tag, idx) => (
+                <li
+                  key={idx}
+                  className="rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </article>
         ))}
       </div>
